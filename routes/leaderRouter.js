@@ -61,7 +61,7 @@ leaderRouter.route('/:leaderId')
     Leaders.findByIdAndUpdate(req.params.leaderId, {
         $set: req.body
     }, { new: true })
-    .then((dish) => {
+    .then((leader) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.json(leader);

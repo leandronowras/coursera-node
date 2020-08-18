@@ -24,7 +24,7 @@ promoRouter.route('/')
         console.log('Promotion Created ', promotion);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.json(promotions);
+        res.json(promotion);
     }, (err) => next(err))
     .catch((err) => next(err));
 })
